@@ -1,10 +1,3 @@
-"""
-File: bouncing_ball
-Name: Yok
--------------------------
-TODO:
-"""
-
 from campy.graphics.gobjects import GOval, GRect
 from campy.graphics.gwindow import GWindow
 from campy.gui.events.timer import pause
@@ -34,9 +27,9 @@ def main():
 
 def start(event):
     global count
-    if count < 3 and point.x == 30:     # 跟mouse位置沒關係，
+    if count < 3 and point.x == 30:    
         vy = 0
-        while True:  #改成count
+        while True: 
             point.move(VX, vy)
             vy += GRAVITY
             if point.x + point.width >= window.width:
