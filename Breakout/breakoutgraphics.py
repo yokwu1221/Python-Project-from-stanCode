@@ -1,11 +1,3 @@
-"""
-stanCode Breakout Project
-Adapted from Eric Roberts's Breakout by
-Sonja Johnson-Yu, Kylie Jue, Nick Bowman, 
-and Jerry Liao.
-
-YOUR DESCRIPTION HERE
-"""
 from campy.graphics.gwindow import GWindow
 from campy.graphics.gobjects import GOval, GRect, GLabel
 from campy.gui.events.mouse import onmouseclicked, onmousemoved
@@ -131,11 +123,11 @@ class BreakoutGraphics:
             for y in range(2):
                 maybe_object = self.window.get_object_at(self.ball.x + x * self.ball_radius * 2, self.ball.y + y * self.ball_radius *2)
 
-                if maybe_object is not None:        # 球碰到物件
+                if maybe_object is not None:        
                     if maybe_object is self.paddle:
                         if self.__dy > 0:
-                            self.__dy = -self.__dy      # 碰到paddle反彈
-                    else:                           # 碰到磚塊
+                            self.__dy = -self.__dy      
+                    else:                          
                         self.window.remove(maybe_object)
                         if a:
                             self.__dy = -self.__dy
