@@ -40,9 +40,6 @@ def new_head(head: ListNode, x: int) -> ListNode:
     return head
 
 
-####### DO NOT EDIT CODE BELOW THIS LINE ########
-
-
 def traversal(head):
     """
     :param head: ListNode, the first node to a linked list
