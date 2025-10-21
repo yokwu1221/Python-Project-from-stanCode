@@ -52,9 +52,6 @@ def add_2_numbers(l1: ListNode, l2: ListNode) -> ListNode:
     return dummy_node.next
 
 
-####### DO NOT EDIT CODE BELOW THIS LINE ########
-
-
 def traversal(head):
     """
     :param head: ListNode, the first node to a linked list
